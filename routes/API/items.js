@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
 });
 
 //@route POST application
-//@desc Create an item
+//@desc Creates an item
 //@access Public
 router.post('/', (req, res) => {
     const newItem = new Item({
@@ -25,12 +25,12 @@ router.post('/', (req, res) => {
 });
 
 //@route Delete application
-//@desc Delete an item
+//@desc Deletes an item
 //@access Public
 router.delete('/:id', (req, res) => {
     Item.findById(req.params.id).then(
         item => item.remove().then(() => res.json({ success: true }))
-        ).catch(err => res.status(404).json({ success: true }));
+    ).catch(err => res.status(404).json({ success: true }));
 });
 
 module.exports = router;
