@@ -20,5 +20,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cha-er-si/Learning-MERN-Shopping-List.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Cha-er-si/Learning-MERN-Shopping-List/issues"
+  },
+  "homepage": "https://github.com/Cha-er-si/Learning-MERN-Shopping-List#readme"
 }
