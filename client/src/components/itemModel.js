@@ -13,7 +13,6 @@ import { connect } from 'react-redux';
 import {
     addItem
 } from '../actions/itemActions';
-import { v4 as uuid } from 'uuid';
 import itemReducer from '../reducers/itemReducer';
 
 class ItemModel extends Component {
@@ -34,7 +33,6 @@ class ItemModel extends Component {
         e.preventDefault();
 
         const newItem = {
-            id: uuid(),
             name: this.state.name
         }
 
